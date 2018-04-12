@@ -21,7 +21,7 @@ def me(sn):
 			print('Location: Unknown')
 		else:
 			print('Location: ' + user.location)
-		print('Friends: ' + str(user.friends_count))
+		print('Following: ' + str(user.friends_count))
 		print('Followers: ' + str(user.followers_count))
 		print('Tweets: ' + str(user.statuses_count))
 		print('Favourites: ' + str(user.favourites_count))

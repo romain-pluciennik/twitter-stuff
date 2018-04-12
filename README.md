@@ -1,6 +1,28 @@
 # Twitter Stuff
 
-Messing with twitter API using Python and Tweepy
+Messing with the Twitter API using Python and Tweepy
+
+## Stuff it does
+
+This allows you to pull information about a Twitter account, given its screen name (@).
+For now, the code fetches these:
+1. Account information:
+  * Name (as displayed on the profile)
+  * Screen Name (@)
+  * Bio
+  * Location
+  * Following count
+  * Followers count
+  * Tweets count
+  * Favourites count
+  * Account creation date
+  * Account time zone (if set)
+  * Account verification (accounts with the tick next to the name)
+2. Last tweet information (if available):
+  * Last tweet made
+  * Date
+  * Retweets
+  * Favourites
 
 ## Requirements
 
