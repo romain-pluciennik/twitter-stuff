@@ -1,5 +1,5 @@
 import tweepy
-from datetime import datetime, timedelta
+import json
 
 from config import (
 	consumer_key,
@@ -43,8 +43,9 @@ def me(sn):
 				print('Favourites: ' + str(user.status.favorite_count))
 			except:
 				print("This account has not tweeted anything yet.")
-	except:
-		print("This account does not exist or has been suspended.")
+	except tweepy.TweepError as e:
+		tojson = json.loads(e.reason.replace("[", "").replace("]", "").replace("'", "\""))
+		print(tojson["message"])
 pass
 
 sn = ''
