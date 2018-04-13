@@ -24,7 +24,7 @@ def me(sn):
 		print('Following: ' + str(user.friends_count))
 		print('Followers: ' + str(user.followers_count))
 		print('Tweets: ' + str(user.statuses_count))
-		print('Favourites: ' + str(user.favourites_count))
+		print('Likes: ' + str(user.favourites_count))
 		print('Creation Date: ' + str(user.created_at))
 		if not user.time_zone:
 			print("Time Zone: Unknown")
@@ -40,7 +40,7 @@ def me(sn):
 				print('Last tweet: ' + user.status.text)
 				print('Last tweet date: ' + str(user.status.created_at))
 				print('Retweets: ' + str(user.status.retweet_count))
-				print('Favourites: ' + str(user.status.favorite_count))
+				print('Likes: ' + str(user.status.favorite_count))
 			except:
 				print("This account has not tweeted anything yet.")
 	except tweepy.TweepError as e:
