@@ -14,15 +14,15 @@ For now, the code fetches these:
   * Following count
   * Followers count
   * Tweets count
-  * Favourites count
+  * Likes count
   * Account creation date
   * Account time zone (if set)
-  * Account verification (accounts with the tick next to the name)
+  * Account verification status (Prints if the account has been verified by Twitter)
 * Last tweet information (if available):
   * Last tweet made
   * Date
   * Retweets
-  * Favourites
+  * Likes
 
 ## Requirements
 
